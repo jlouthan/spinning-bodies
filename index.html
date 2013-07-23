@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Using three.js</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            body{
+                width: 90%;
+
+            }
+            canvas{
+                float:left; 
+
+            }
+            #canvas{
+                border: 2px solid black;
+               /*border: 2px solid red;
+                float: right;*/
+            }
+            #canvasImage{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="canvasImage"/>
+        <script src="./js/libs/stats.min.js"></script>
+        <script src="./js/libs/three.min.js"></script>
+        <script src="./js/SelectClicked.js"></script>
+        <canvas id="canvas" width="300" height ="600"></canvas> 
+         <canvas id="croppedCanvas" width="300" height ="300"></canvas> 
+        <input type="file" id="imageLoader" name="imageLoader"/>
+        <button type="button" onclick="changeMesh();">Add my image</button>
+        <script src="./js/ImageOnCanvas.js"></script>
+        
+
+
+
+    </body>
+</html>
